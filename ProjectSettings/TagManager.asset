@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - floor
+  - eagle
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: background
+    uniqueID: 3680733203
+    locked: 0
+  - name: floor
+    uniqueID: 1967247163
+    locked: 0
+  - name: character
+    uniqueID: 575565685
+    locked: 0
+  - name: gems
+    uniqueID: 3075756927
+    locked: 0
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: eagle
+    uniqueID: 1542551439
+    locked: 0
