@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class mother : MonoBehaviour
 {
+    //Parameters
     public SpriteRenderer CharcterSprite;
     Rigidbody2D a;
     bool isground=true;
@@ -37,9 +38,17 @@ public class mother : MonoBehaviour
         animator.SetBool("isJumping",false);
     }
 
-        void Update()
+    void Update()
     {
-        
+        //Crouch Button Code
+        if(Input.GetButtonDown("Crouch")){
+            animator.SetBool("Crouch",true);
+        }
+        if(Input.GetButtonUp("Crouch")){
+            animator.SetBool("Crouch",false);
+        }
+
+        //Run Button Code
         if(Input.GetButton("Horizontal"))
         {
             transform.Translate(Input.GetAxis("Horizontal")*speed*Time.deltaTime,0f,0f);
@@ -53,6 +62,8 @@ public class mother : MonoBehaviour
             }
 
         }
+
+        //Jump Button Code
         if(Input.GetButtonDown("Jump")&&isground)
         {
             
@@ -60,6 +71,7 @@ public class mother : MonoBehaviour
             animator.SetBool("isJumping",true);
         }
 
+        //Speed Calculate 
         animator.SetFloat("Speed",Mathf.Abs( Input.GetAxis("Horizontal")*speed));
         
 
